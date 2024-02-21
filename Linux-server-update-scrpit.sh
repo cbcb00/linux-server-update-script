@@ -22,7 +22,7 @@ if [[ -z $dist_upgrade_available ]]; then
         # Warn user and Perform distribution upgrade
         echo "Warning: Full system upgrade is starting and might take some time to complete"
         
-        sudo apt dist-upgrade
+        sudo apt dist-upgrade -y
     else
         echo "Skipping distribution upgrade."
     fi
